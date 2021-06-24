@@ -36,7 +36,7 @@ async def sedlyfsir(event):
                f"**Thank You**")
     else:
         text_me = f"{oksir}"
-    formaster = "Sir. How Can I Help You?"
+    formaster = "How can i help you?"
     if event.sender_id == Config.OWNER_ID:
         ok = await chatbot.send_message(event.chat_id, message=formaster, buttons = [
              [custom.Button.inline("Commands For Owner.", data="cmds")],
@@ -57,10 +57,10 @@ async def sedlyfsir(event):
 async def help(event):
     if event.query.user_id is not Config.OWNER_ID:
         await event.edit(
-            "You Can Deploy Your Own ChatBot By Watching Video Down There. \nThank You For Contacting Me.",
+            "My info",
             buttons=[
-                [Button.url("Source Code 📺", "https://github.com/CyberBoyAyush/TGChatBot")],
-                [Button.url("Need Help ❓", "t.me/CyberBoyAyushBot")],
+                [Button.url("Chaneel 📺", "t.me/sylix_team")],
+                [Button.url("Me❓", "t.me/Sylixx")],
             ],
         )
 
